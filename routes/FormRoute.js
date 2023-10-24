@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Project = require("../model/Project");
-const Resume = require("../model/resume");
+const Resume = require("../model/Resume");
 const jsonData = require("../data");
 router.get("/get-all", async (req, res) => {
   const projects = await Project.find({});
